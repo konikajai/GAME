@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+}
+header .again{
+    display:flex;
+    justify-content: space-between;
+}
+.again button{
+    padding:0px 40px;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: white;
+}
+.again p{
+    color:white;
+    margin-right:20px;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    color:white;
+}
+hr{
+    /* position: absolute; */
+    color:white;
+    background-color: white;
+    height:5px;
+}
+.number{
+    background-color: red;
+    color:white;
+    padding:10px;
+    width:30px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    margin: auto;
+}
+header h1{
+    margin-top:150px;
+}
+header .number{
+    margin-bottom:100px;
+}
+main{
+    display:flex;
+    justify-content: space-around;
+}
+.left{
+    width:120px;
+    height:40px;
+    border:1px solid white;
+}
+.check{
+    padding:7px 30px;
+    color:black;
+    background-color: grey;
+    margin:10px 0px 0px 10px;
+}
+.score{
+    margin-top:30px;
+    color:grey;
+}
+.high_score,.message{
+    color:grey;
+}
