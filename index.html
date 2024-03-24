@@ -6,7 +6,9 @@
     <title>GAME</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <!-- <link rel="stylesheet" href="./JAVASCRIPT/index.js"> -->
-    <script src="./JAVASCRIPT/index.js"></script>
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap')
+    </style> -->
 </head>
 <body>
     <header>
@@ -15,20 +17,20 @@
             <p>(Between 1 and 20)</p>
         </div>
         <h1>Guess My Number!</h1>
-        <hr>
         <p class="number">?</p>
     </header>
     <main>
-        <section>
-            <input type="number" class="left" name="guess" id="guess">
-            <br>
-            <button class="check">Check!</button>
+        <section class="left">
+            <input type="number" name="guess" class="guess">
+            <button class="checkbtn">Check!</button>
         </section>
-        <section>
+        <section class="right">
             <p class="message">Start guessing........</p>
             <p class="score">Score : <span>20</span></p>
-            <p class="high_score">Hight Score : <span>0</span></p>
+            <p class="high_score">High Score : <span>0</span></p>
         </section>
     </main>
 </body>
+
+<script src="./JAVASCRIPT/index.js"></script>
 </html>
