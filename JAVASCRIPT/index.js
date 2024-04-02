@@ -27,6 +27,7 @@ document.querySelector('.checkbtn').addEventListener('click',function(){
 
     else if(user_number===number){
         document.querySelector('.message').textContent="Correct Guess";
+        document.querySelector('.message').style.color="white";
         document.querySelector('.number').textContent=user_number;
         document.querySelector('body').style.backgroundColor="green";
 
