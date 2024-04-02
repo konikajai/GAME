@@ -7,9 +7,25 @@ document.querySelector('.checkbtn').addEventListener('click',function(){
     
     const user_number = Number(document.querySelector('.guess').value);
     
-    console.log(user_number);
+    // console.log(user_number);
 
-    if(user_number===number){
+
+    // if(!user_number){
+    //    document.querySelector('.message').textContent="Guess the number";
+    //    document.querySelector('.message').style.color="red";
+    // }
+
+    if(user_number==''){
+        document.querySelector('.message').textContent="Guess the number";
+        document.querySelector('.message').style.color="red";
+    }
+
+    if(user_number>20 || user_number<1){                        
+        document.querySelector('.message').textContent="Guess the number between 1 to 20 only";
+        document.querySelector('.message').style.color="red";
+    }
+
+    else if(user_number===number){
         document.querySelector('.message').textContent="Correct Guess";
         document.querySelector('.number').textContent=user_number;
         document.querySelector('body').style.backgroundColor="green";
@@ -18,21 +34,9 @@ document.querySelector('.checkbtn').addEventListener('click',function(){
             high_score=score;
             document.querySelector('.high_score span').textContent=high_score;
         }
-        console.log("the high_score is" + high_score);
+        // console.log("the high_score is" + high_score);
     }
 
-    else if(user_number>20){
-        document.querySelector('.message').textContent="Guess the number between 1 to 20 only";
-        document.querySelector('.message').style.color="red";
-    }
-
-    // else if(!user_number){
-    //     document.querySelector('.message').textContent="Guess the number";
-    // }
-
-    else if(user_number==''){
-        document.querySelector('.message').textContent="Guess the number";
-    }
     else if(user_number<number){
         if(count>1){
             document.querySelector('.message').textContent="Guess a big number";
@@ -56,10 +60,10 @@ document.querySelector('.checkbtn').addEventListener('click',function(){
         }
     }
 
-    console.log("the count is" + count);
+    // console.log("the count is" + count);
 
     score = document.querySelector('.score span').textContent=count;
-    console.log("the score is" + score);
+    // console.log("the score is" + score);
 })
 
 

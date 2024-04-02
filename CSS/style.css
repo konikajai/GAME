@@ -46,7 +46,6 @@ h1{
     position: relative;
     top:30px;
     left:47%;
-    /* margin: auto; */
 }
 
 /* main body */
@@ -58,6 +57,7 @@ main{
 .guess{
     width:140px;
     color:white;
+    margin-left:10px;
     display:block;
     text-align: center;
     font-size: 30px;
@@ -71,54 +71,100 @@ main{
     padding:10px;
 }
 .message{
-    font-size: 20px;
+    font-size: 20px; 
 }
 .score{
     margin:40px 0px 15px 0px;
     font-size: 15px;
 }
-.high-score{
+.high_score{
     font-size: 15px;
 }
-@media only screen and (min-width:0px) and (max-width:700px){
-    header div{
-        display:grid;
-        grid-template-columns: repeat(1,1fr)
-    }
-    header h1,header p{
-        align-items: center;
-    }
-    main{
-        display:grid;
-        grid-template-columns: repeat(1,1fr)
-    }
-    main .right{
-        margin-top:100px;
-    }
+
+
+@media only screen and (min-width:0px) and (max-width:600px){
+/* body */
+*{
+    margin:0;
+    padding:0;
+    font-family: 'press start 2p';
 }
-@media only screen and (min-width:700px) and (max-width:1400px){
-    header div{
-        display:flex;
-        justify-content: space-between;
-    }
-    header h1,header p{
-        align-items: center;
-    }
-    main{
-        display:flex;
-        justify-content: space-around;
-    }
+body{
+    background-color: black;
+    color:white;
 }
-/* @media only screen and (min-width:1400px) and (max-width:2000px){
-    header div{
-        display:flex;
-        justify-content: space-between;
-    }
-    header h1,header p{
-        align-items: center;
-    }
-    main{
-        display:flex;
-        justify-content: space-around;
-    }
-} */
+
+/* header */
+header{
+    border-bottom: 10px solid white;
+}
+header .again{
+    display:flex;
+}
+.again button{
+    width:130px;
+    font-size: 15px;
+    padding:10px 0px;
+    border-radius: 5px;
+    margin:20px 0px 0px 20px;
+    background-color: white;
+}
+.again p{
+    color:white;
+    margin:20px 20px 0px 0px;
+    font-size: 10px;
+}
+h1{
+    font-size: large;
+    text-align: center;
+    color:white;
+    margin-top:80px;
+}
+.number{
+    background-color: red;
+    color:white;
+    padding:10px;
+    width:30px;
+    font-size:15px;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    top:30px;
+    left:47%;
+}
+/* main body */
+main{
+    display:flex;
+    justify-content: space-around;
+    margin-top:100px;
+}
+.guess{
+    width:100px;
+    color:white;
+    display:block;
+    text-align: center;
+    font-size: 15px;
+    padding:10px 0px;
+    border:1px solid white;
+    background-color: black;
+}
+.checkbtn{
+    margin:20px 0px 0px 12px;
+    font-size:10px;
+    padding:10px;
+}
+.message{
+    font-size: 12px;
+    margin-left:10px;
+    line-height: 18px;
+}
+.score{
+    margin:20px 0px 25px 10px;
+    font-size: 11px;
+}
+.high_score{
+    font-size: 11px;
+    margin-left:10px;
+}
+}
+
