@@ -15,12 +15,15 @@ document.querySelector('.checkbtn').addEventListener('click',function(){
     //    document.querySelector('.message').style.color="red";
     // }
 
-    if(user_number==''){
+    if(user_number===''){
         document.querySelector('.message').textContent="Guess the number";
         document.querySelector('.message').style.color="red";
     }
 
-    if(user_number>20 || user_number<1){                        
+    //if we enter zero it will take the null value because 0 means null in number so while comparing if we take datatype 
+    also in consideration it will give the correct output as the condition is for the string only to be empty.
+
+    else if(user_number>20 || user_number < 1){                        
         document.querySelector('.message').textContent="Guess the number between 1 to 20 only";
         document.querySelector('.message').style.color="red";
     }
