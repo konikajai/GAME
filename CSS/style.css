@@ -96,6 +96,7 @@ body{
 
 /* header */
 header{
+    margin-top:170px;
     border-bottom: 10px solid white;
 }
 header .again{
@@ -111,7 +112,7 @@ header .again{
 }
 .again p{
     color:white;
-    margin:20px 20px 0px 0px;
+    margin:30px 20px 0px 0px;
     font-size: 10px;
 }
 h1{

@@ -15,6 +15,7 @@ document.querySelector('.checkbtn').addEventListener('click', function () {
     //    document.querySelector('.message').style.color="red";
     // }
 
+<<<<<<< HEAD
     //if we enter zero it will take the null value because 0 means null in number so while comparing if we take datatype also in consideration it will give the correct output as the condition is for the string only to be empty.............
 
     if (user_number === '') {
@@ -25,6 +26,19 @@ document.querySelector('.checkbtn').addEventListener('click', function () {
     else if (user_number > 20 || user_number < 1) {
         document.querySelector('.message').textContent = "Guess the number between 1 to 20 only";
         document.querySelector('.message').style.color = "red";
+=======
+    if(user_number===''){
+        document.querySelector('.message').textContent="Guess the number";
+        document.querySelector('.message').style.color="red";
+    }
+
+    //if we enter zero it will take the null value because 0 means null in number so while comparing if we take datatype 
+    also in consideration it will give the correct output as the condition is for the string only to be empty.
+
+    else if(user_number>20 || user_number < 1){                        
+        document.querySelector('.message').textContent="Guess the number between 1 to 20 only";
+        document.querySelector('.message').style.color="red";
+>>>>>>> b8d8efb89db7d36013c26deb9b2e00f57043065e
     }
 
     else if (user_number === number) {
